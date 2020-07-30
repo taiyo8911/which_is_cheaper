@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>どっちが安い？</title>
+</head>
+
+<body>
+    <h1>どっちが安いか判定するアプリ</h1>
+    <form name="myForm" id="myForm" onsubmit="calc(); return false;">
+        <h2>A商品</h2>
+        <dl>
+            <dt>量</dt>
+            <dd><input type="tel" maxlength="3" onkeyup="setNextFocus(this)" name="a_amount" id="a_amount" required> g</dd>
+            <dt>値段</dt>
+            <dd><input type="tel" maxlength="3" onkeyup="setNextFocus(this)" name="a_price" id="a_price" required> 円</dd>
+        </dl>
+        <h2>B商品</h2>
+        <dl>
+            <dt>量</dt>
+            <dd><input type="tel" maxlength="3" onkeyup="setNextFocus(this)" name="b_amount" id="b_amount" required> g</dd>
+            <dt>値段</dt>
+            <dd><input type="tel" maxlength="3" onkeyup="setNextFocus(this)" name="b_price" id="b_price" required> 円</dd>
+        </dl>
+        <input type="submit" value="計算する">
+    </form>
+    <div id="result"></div>
+</body>
+
+</html>
