@@ -1,4 +1,4 @@
-//入力フォームで最大桁の数値が入力されたら自動フォーカスする
+//maxLengthで指定した桁数まで入力されたら、フォーカスが移動する
 function setNextFocus(obj) {
     if (obj.value.length >= obj.maxLength) {
         var es = document.myForm.elements;
@@ -27,7 +27,7 @@ function calc() {
     //Bの単価を計算
     var b_unit_price = b_price / b_amount;
 
-    //判定の文字列を格納する変数
+    //判定を格納する変数
     var result;
 
     //どちらが安いか判定
@@ -41,11 +41,16 @@ function calc() {
         result = "B商品のほうが安いです。";
     }
 
-    //表示するhtmlを作成
-    var html = "<dl>";
-    html += "<dd>" + result + "</dd>";
-    html += "</dl>";
+    //結果を代入する
+    a_unit_price = "単価は" + a_unit_price + "円";
+    b_unit_price = "単価は" + b_unit_price + "円";
 
-    //idがresultの部分にhtmlを表示
-    document.getElementById("result").innerHTML = html;
+    //idがa_unit_priceの部分に判定結果を表示
+    document.getElementById("a_unit_price").innerHTML = a_unit_price;
+
+    //idがb_unit_priceの部分に判定結果を表示
+    document.getElementById("b_unit_price").innerHTML = b_unit_price;
+
+    //idがresultの部分に判定結果を表示
+    document.getElementById("result").innerHTML = result;
 }
