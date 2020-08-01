@@ -11,24 +11,29 @@
 <body>
     <h1>どっちが安いか判定するアプリ</h1>
     <form name="myForm" id="myForm" onsubmit="calc(); return false;">
-        <h2>A商品：<span id="a_unit_price">　</span></h2>
+        <h2>A商品</h2>
         <dl>
             <dt>量</dt>
-            <dd><input type="tel" maxlength="3" onkeyup="setNextFocus(this)" name="a_amount" id="a_amount" required autofocus> g</dd>
+            <dd><input type="tel" maxlength="3" onkeyup="setNextFocus(this)" name="a_amount" id="a_amount" required
+                    autofocus> g</dd>
             <dt>値段</dt>
-            <dd><input type="tel" maxlength="3" onkeyup="setNextFocus(this)" name="a_price" id="a_price" required> 円</dd>
+            <dd><input type="tel" maxlength="3" onkeyup="setNextFocus(this)" name="a_price" id="a_price" required> 円
+            </dd>
         </dl>
-        <h2>B商品：<span id="b_unit_price"></span></h2>
+        <h2>B商品</h2>
         <dl>
             <dt>量</dt>
-            <dd><input type="tel" maxlength="3" onkeyup="setNextFocus(this)" name="b_amount" id="b_amount" required> g</dd>
+            <dd><input type="tel" maxlength="3" onkeyup="setNextFocus(this)" name="b_amount" id="b_amount" required> g
+            </dd>
             <dt>値段</dt>
-            <dd><input type="tel" maxlength="3" onkeyup="setNextFocus(this)" name="b_price" id="b_price" required> 円</dd>
+            <dd><input type="tel" maxlength="3" onkeyup="setNextFocus(this)" name="b_price" id="b_price" required> 円
+            </dd>
         </dl>
         <input type="submit" value="計算する">
         <a href=""><input type="button" value="クリア"></a>
     </form>
-    <p></p>
+    <p id="a_unit_price"></p>
+    <p id="b_unit_price"></p>
     <div id="result" style="font-weight: bold; font-size: 25px; color: red;"></div>
 </body>
 
