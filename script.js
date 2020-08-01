@@ -41,9 +41,12 @@ function calc() {
         result = "B商品のほうが安いです。";
     }
 
+    //いくら安いか計算
+    if (a_unit_price < b_unit_price)
+
     //結果を代入する
-    a_unit_price = "単価は" + a_unit_price + "円";
-    b_unit_price = "単価は" + b_unit_price + "円";
+    a_unit_price = "A商品の単価は" + a_unit_price + "円。";
+    b_unit_price = "B商品の単価は" + b_unit_price + "円。";
 
     //idがa_unit_priceの部分に判定結果を表示
     document.getElementById("a_unit_price").innerHTML = a_unit_price;
