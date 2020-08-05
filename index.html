@@ -11,22 +11,23 @@
 <body>
     <h1>どっちが安いか判定するアプリ</h1>
     <form name="myForm" id="myForm" onsubmit="calc(); return false;">
+        <p>数値は半角で入力してください。</p>
         <h2>A商品</h2>
         <dl>
             <dt>量</dt>
-            <dd><input type="tel" maxlength="3" onkeyup="setNextFocus(this)" name="a_amount" id="a_amount" required
+            <dd><input type="tel" maxlength="3" pattern="[0-9]+" onkeyup="setNextFocus(this)" name="a_amount" id="a_amount" required
                     autofocus> g</dd>
             <dt>値段</dt>
-            <dd><input type="tel" maxlength="3" onkeyup="setNextFocus(this)" name="a_price" id="a_price" required> 円
+            <dd><input type="tel" maxlength="3" pattern="[0-9]+" onkeyup="setNextFocus(this)" name="a_price" id="a_price" required> 円
             </dd>
         </dl>
         <h2>B商品</h2>
         <dl>
             <dt>量</dt>
-            <dd><input type="tel" maxlength="3" onkeyup="setNextFocus(this)" name="b_amount" id="b_amount" required> g
+            <dd><input type="tel" maxlength="3" pattern="[0-9]+" onkeyup="setNextFocus(this)" name="b_amount" id="b_amount" required> g
             </dd>
             <dt>値段</dt>
-            <dd><input type="tel" maxlength="3" onkeyup="setNextFocus(this)" name="b_price" id="b_price" required> 円
+            <dd><input type="tel" maxlength="3" pattern="[0-9]+" onkeyup="setNextFocus(this)" name="b_price" id="b_price" required> 円
             </dd>
         </dl>
         <input type="submit" value="計算する">
