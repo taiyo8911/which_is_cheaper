@@ -8,6 +8,10 @@ h1 {
     color: gray;
 }
 
+input{
+    font-size: 16px;
+}
+
 #main {
     max-width: 100%;
     width: 100%;
@@ -17,17 +21,12 @@ h1 {
     box-sizing: border-box;
 }
 
-.container {
-    display: flex;
-    width: max-content;
-    margin: auto;
-}
-
 #res {
     max-width: 100%;
     width: max-content;
     color: #0c0c14;
     padding: 10px;
+    margin: auto;
     text-align: center;
     box-sizing: border-box;
 }
@@ -42,13 +41,14 @@ h1 {
 
 .box {
     display: inline-block;
+    padding: 7px;
 }
 
-.a {
+#a {
     background-color: pink;
 }
 
-.b {
+#b {
     background-color: lightgreen;
 }
 
@@ -58,4 +58,5 @@ h1 {
 
 #img1 {
     display: none;
+    margin: auto;
 }
