@@ -13,7 +13,7 @@
     <div id="main" class="bg22">
         <h1>どっちが安いか判定するアプリ</h1>
         <form name="myForm" id="myForm" onsubmit="calc(); return false;">
-            <div class="box a">
+            <div class="box" id="a">
                 <h2>A商品</h2>
                 <dl>
                     <dt>量</dt>
@@ -25,7 +25,7 @@
                     </dd>
                 </dl>
             </div>
-            <div class="box b">
+            <div class="box" id="b">
                 <h2>B商品</h2>
                 <dl>
                     <dt>量</dt>
@@ -45,17 +45,12 @@
         </form>
     </div>
 
-    <div class="container">
+    <div id="res">
+        <p id="a_unit_price"></p>
+        <p id="b_unit_price"></p>
+        <div id="result" style="font-weight: bold; font-size: 25px; color: red;"></div>
         <img src="rainbow.gif" id="img1">
-
-        <div id="res">
-            <p id="a_unit_price"></p>
-            <p id="b_unit_price"></p>
-            <div id="result" style="font-weight: bold; font-size: 25px; color: red;"></div>
-        </div>
-
     </div>
-
 
 </body>
 
