@@ -1,4 +1,4 @@
-//maxLengthで指定した桁数まで入力されたら、フォーカスが移動する
+//maxLengthで指定した桁数まで入力されたら、フォーカスを移動する
 function setNextFocus(obj) {
     if (obj.value.length >= obj.maxLength) {
         var es = document.myForm.elements;
@@ -19,6 +19,9 @@ function calc() {
     var a_price = document.myForm.a_price.value;
     //Aの単価を計算
     var a_unit_price = a_price / a_amount;
+    a_unit_price = a_unit_price * 1000;
+    a_unit_price = Math.round(a_unit_price);
+    a_unit_price = a_unit_price / 1000;
 
     //入力したB量の値を取得
     var b_amount = document.myForm.b_amount.value;
@@ -26,6 +29,9 @@ function calc() {
     var b_price = document.myForm.b_price.value;
     //Bの単価を計算
     var b_unit_price = b_price / b_amount;
+    b_unit_price = b_unit_price * 1000;
+    b_unit_price = Math.round(b_unit_price);
+    b_unit_price = b_unit_price / 1000;
 
     //判定を格納する変数
     var result;
@@ -40,6 +46,17 @@ function calc() {
     else {
         result = "B商品のほうが安いです。";
     }
+
+    //ボタンが押されたら、画像を表示する。
+	const img1 = document.getElementById("img1");
+
+	if(img1.style.display=="none"){
+		// noneで非表示
+		img1.style.display ="none";
+	}else{
+		// blockで表示
+		img1.style.display ="block";
+	}
 
     //結果を代入する
     a_unit_price = "A商品の単価は" + a_unit_price + "円。";
