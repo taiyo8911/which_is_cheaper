@@ -7,3 +7,5 @@
 * [入力フォームを使って計算させる](https://liveinhope.biz/archives/347)
 * [指定した桁数を入力したら、フォーカスを自動的に次に進める](https://javascript.programmer-reference.com/js-auto-focus-move/)
 * [ページが表示されたらオートフォーカスする](http://html5.cyberlab.info/elements/forms/button-autofocus.html)
+* [ボタンが押されたら表示] (https://itsakura.com/javascript-display)
+* [CSSだけで壁紙風のデザイン] (https://copypet.jp/2403/)
